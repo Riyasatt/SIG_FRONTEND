@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const RegistrationForm = () => {
   const [date, setDate] = useState('');
   const [month, setMonth] = useState('');
@@ -137,7 +137,7 @@ const RegistrationForm = () => {
           </button>
         </form>
         <p className="mt-4 text-center text-sm">
-          Already have an account? <a href="#" className="text-blue-500 hover:underline">Sign In</a>
+          Already have an account?  <Link to="/" className="text-blue-500 hover:underline">Sign In</Link>
         </p>
       </div>
     </div>
